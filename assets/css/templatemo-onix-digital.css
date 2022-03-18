@@ -234,6 +234,7 @@ body {
   border-radius: 23px;
   letter-spacing: 0.25px;
   transition: all .3s;
+  margin-bottom: 10px;
 }
 
 .main-blue-button-hover a:hover {
@@ -666,6 +667,11 @@ header
     box-shadow: none;
     text-align: center;
   }
+  @media screen and (max-width: 600px) {
+    .header-area {
+      height: 30px;
+    }
+  }
   .header-area .container {
     padding: 0px;
   }
@@ -872,6 +878,16 @@ Banner Style
   overflow: hidden;
 }
 
+@media screen and (max-width: 600px) {
+  .main-banner {
+    padding: 106px 0px 130px 0px;
+  }
+  .main-banner .item h2{
+    font-size: 27px;
+    line-height: 40px;
+  }
+}
+
 .main-banner:after {
   content: '';
   background-image: url(../images/baner-dec-left.png);
@@ -976,6 +992,15 @@ Banner Style
 }
 
 
+@media screen and (max-width: 600px) {
+
+  .main-banner .owl-dots {
+    margin-top: 30px;
+    counter-reset: dots;
+  }
+}
+
+
 /* 
 ---------------------------------------------
 Services Style
@@ -1008,6 +1033,17 @@ Services Style
   position: relative;
   margin-top: 0px;
   padding-top: 120px;
+}
+
+@media (min-width: 767px) {
+  .our-services {
+    position: relative;
+    margin-top: 0px;
+    padding-top: 45px;
+  }
+  .main-banner .owl-dots{
+    margin-top: 30px;
+  }
 }
 
 .our-services .section-heading {
